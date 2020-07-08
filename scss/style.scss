@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css?family=Google+Sans:100,300,400,500,700,900,100i,300i,400i,500i,700i,900i"); 
+
+* { font-family: "Google Sans", sans-serif; 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    padding: 20px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-size: 20px;
+}
+
+a{
+    color: cyan;
+    text-decoration: none;
+    display: block;
+    margin-top: 20px;
+    font-style: italic;
+    font-weight: 700;
+}

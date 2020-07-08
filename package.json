@@ -1,0 +1,31 @@
+{
+  "name": "Portfolio",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/mcperera/portfolio.git",
+  "author": "Madushan Perera <madushanperera3817@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "server": "lite-server",
+    "css": "node-sass scss/style.scss -wo css",
+    "dev": "webpack-dev-server --open",
+    "build": "webpack"
+  },
+  "dependencies": {
+    "bulma": "^0.9.0",
+    "css-loader": "^3.6.0",
+    "node-sass": "^4.14.1",
+    "sass-loader": "^9.0.2",
+    "style-loader": "^1.2.1",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "devDependencies": {
+    "clean-webpack-plugin": "^3.0.0",
+    "html-webpack-plugin": "^4.3.0",
+    "lite-server": "^2.5.4",
+    "mini-css-extract-plugin": "^0.9.0",
+    "npm-run-all": "^4.1.5"
+  }
+}
