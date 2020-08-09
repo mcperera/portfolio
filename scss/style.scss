@@ -2,20 +2,23 @@
 
 * {
   font-family: "Google Sans", sans-serif;
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
 body {
+  margin-top: 20px;
+  margin-left: 75px;
+  margin-right: 75px;
+  margin-bottom: 75px;
+  position: fixed;
   padding: 20px;
-  background-color: black;
+  background-color: #03122b;
   color: white;
-  text-align: center;
+  //text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  //align-items: center;
   min-height: 100vh;
   font-size: 20px;
 }
@@ -23,8 +26,45 @@ body {
 a {
   color: cyan;
   text-decoration: none;
-  display: block;
+  //display: block;
   margin-top: 20px;
   font-style: italic;
   font-weight: 700;
+}
+
+.languages {
+  font-size: small;
+}
+
+.footer {
+  font-size: small;
+}
+
+.nameis {
+  margin-bottom: 5px;
+}
+
+.effect-shine {
+  margin-top: 0px;
+}
+
+.effect-shine:hover {
+  -webkit-mask-image: linear-gradient(
+    -75deg,
+    rgba(56, 57, 163, 0.6) 30%,
+    #000 50%,
+    rgba(8, 129, 45, 0.6) 70%
+  );
+  -webkit-mask-size: 200%;
+  animation: shine 3s infinite;
+}
+
+@-webkit-keyframes shine {
+  from {
+    -webkit-mask-position: 150%;
+  }
+
+  to {
+    -webkit-mask-position: -50%;
+  }
 }
