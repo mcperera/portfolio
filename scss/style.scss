@@ -6,8 +6,8 @@
 }
 
 body {
-  margin-top: 20px;
-  margin-left: 75px;
+  margin-top: 10px;
+  margin-left: 100px;
   margin-right: 75px;
   margin-bottom: 75px;
   position: fixed;
@@ -23,29 +23,35 @@ body {
   font-size: 20px;
 }
 
+.description {
+  margin-top: 5px;
+  margin-top: 5px;
+}
+
 a {
   color: cyan;
   text-decoration: none;
-  //display: block;
   margin-top: 20px;
-  font-style: italic;
+  font-style: initial;
   font-weight: 700;
 }
 
-.languages {
-  font-size: small;
-}
-
-.footer {
-  font-size: small;
-}
-
 .nameis {
-  margin-bottom: 5px;
+  padding: 0;
+  margin: 0;
+}
+
+.languages {
+  padding: 5px;
+  border: thin;
+  width: 350px;
+  margin: 5px;
+  font-size: small;
 }
 
 .effect-shine {
   margin-top: 0px;
+  margin-bottom: 10px;
 }
 
 .effect-shine:hover {
@@ -66,5 +72,23 @@ a {
 
   to {
     -webkit-mask-position: -50%;
+  }
+}
+
+.footer {
+  font-size: small;
+}
+
+.social {
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    margin-top: 10px;
+    margin-left: 30px;
+  }
+  .description {
+    width: 70%;
   }
 }
