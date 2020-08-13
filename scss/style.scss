@@ -412,20 +412,108 @@ svg:hover {
 //---------Button
 
 //--------------Responsive
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   body {
+    font-size: small;
     margin-top: 0;
     margin-left: 30px;
-    padding: 10px;
+    padding: 0px 0px 75px 10px;
     flex-direction: column;
     justify-content: center;
   }
   .description {
     width: 70%;
   }
+
+  .section1 {
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    min-height: 100vh;
+    float: left;
+    background-color: #03122b;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .progress-container {
+    display: none;
+  }
+
+  .welcome {
+    font-size: small;
+    padding: 0px;
+  }
+
+  svg {
+    height: 3%;
+    width: 3%;
+  }
+
+  .section2 {
+    display: none;
+  }
+
+  .content {
+    position: relative;
+    overflow: hidden;
+
+    font-family: "Lato", sans-serif;
+    line-height: 40px;
+    color: #ecf0f1;
+
+    &__container {
+      overflow: hidden;
+      height: 40px;
+
+      &:after,
+      &:before {
+        position: absolute;
+        top: 0;
+
+        color: #16a085;
+        font-size: 42px;
+        line-height: 40px;
+
+        -webkit-animation-name: opacity;
+        -webkit-animation-duration: 2s;
+        -webkit-animation-iteration-count: infinite;
+        animation-name: opacity;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+      }
+
+      &__text {
+        display: inline;
+        float: left;
+        margin: 0;
+      }
+
+      &__list {
+        font-weight: 600;
+        margin-top: 0;
+        padding-left: 35px;
+        text-align: left;
+        list-style: none;
+
+        -webkit-animation-name: change;
+        -webkit-animation-duration: 10s;
+        -webkit-animation-iteration-count: infinite;
+        animation-name: change;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+
+        &__item {
+          line-height: 40px;
+          margin: 0;
+        }
+      }
+    }
+  }
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 360px) {
   body {
     font-size: small;
     margin-top: 0;
@@ -456,8 +544,8 @@ svg:hover {
   }
 
   svg {
-    height: 8%;
-    width: 8%;
+    height: 6%;
+    width: 6%;
   }
 
   .section2 {
